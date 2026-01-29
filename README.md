@@ -1,35 +1,26 @@
-# Numerical Simulation and Data Analysis of a Physical System
+# Hammer Throw Simulation with Air Drag
 
-Numerical simulation and data analysis of a physical system using Python and scientific computing tools.
+Numerical simulation of hammer throw projectile motion including quadratic air resistance.
 
 ## 📌 Description
-This project focuses on the numerical modeling and analysis of a physical system.
-Mathematical models are implemented and solved using numerical methods, and the resulting data are processed and visualized to extract meaningful physical insights.
+This project models the motion of a hammer throw using Newtonian mechanics with quadratic air drag.
+The equations of motion are integrated numerically using the Runge–Kutta 4th order method (RK4).
 
-The objective is to demonstrate the use of scientific programming techniques for simulation, data analysis, and result interpretation.
+The initial launch velocity is obtained via the bisection method in order to match a target horizontal range corresponding to the current world record.
 
 ## 🛠️ Tools
-- Python  
-- NumPy  
-- SciPy  
-- Pandas  
-- Matplotlib  
+- Python
+- NumPy
+- Matplotlib
 
 ## 📊 Methodology
-- Definition of the physical model
-- Numerical solution using appropriate algorithms
-- Data processing and statistical analysis
-- Visualization of results through plots and figures
-
-## 📈 Results
-The simulations provide quantitative insight into the behavior of the system under different conditions.
-Key results are presented through plots, which can be found in the `figures/` directory.
+- Quadratic drag force proportional to velocity squared
+- Numerical integration using RK4
+- Root-finding via bisection method
+- Comparison of trajectories for different drag coefficients
 
 ## ▶️ How to run
 ```bash
 pip install -r requirements.txt
 python src/main.py
-```
-## ✍️ Author
-Benjamín Rodríguez Valdez
 
